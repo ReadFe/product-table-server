@@ -20,4 +20,4 @@ app.use((req, res, next) => {
         message: 'Resource ' + req.originalUrl + ' is Not Found'
     })
 });
-app.listen(3000, () => console.log('http://localhost:3000'));
+app.listen(3000, () => console.log('http://localhost:3000/api/v4/product'));

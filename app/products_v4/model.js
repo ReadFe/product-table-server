@@ -15,12 +15,19 @@ const productSchema = mongoose.Schema({
         maxlength: 100000000
     },
     
-    stock: Number,
+    stock: {
+        type: Number,
+        required: true
+    },
+
     status: {
         type: Boolean,
         default: true
     },
-    image_url: String
+    image_url: {
+        type: String,
+        required: true
+    }
     
 })
 
